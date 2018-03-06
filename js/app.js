@@ -24,9 +24,9 @@ if(myHeight.toLowerCase() === 'yes'){
 }else {
   alert('Wrong!');
 }
-console.log('Khalil is 6\'5"!')
+console.log('Khalil is 6\'5"!');
 
-var myCar = prompt('Do you think Khalil owns a car? Please answer with "yes" or "No".').toLowerCase();
+var myCar = prompt('Do you think Khalil owns a car? Please answer with "yes" or "no".').toLowerCase();
 
 if(myCar.toLowerCase() === 'yes'){
   alert('Correct!');
@@ -34,3 +34,13 @@ if(myCar.toLowerCase() === 'yes'){
   alert('Wrong!');
 }
 console.log('Yes! Khalil owns a Acura');
+
+var mySport = prompt('Does Khalil play basketball? Please answer with "yes" or "no".').toLowerCase();
+
+if(mySport.toLowerCase() === 'no'){
+  alert('Correct!');
+}else {
+  alert('Wrong!');
+}
+console.log('Khalil plays soccer');
+
