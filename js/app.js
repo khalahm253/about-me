@@ -6,7 +6,6 @@ function questionOne() {
   window.userName = userName;
   alert('Nice to meet you, ' + userName );
 }
-questionOne();
 
 function questionTwo(){
   var myAge = prompt('Do you think Khalil is 20 years old? Please answer with "yes" or "no".').toLowerCase();
@@ -18,7 +17,6 @@ function questionTwo(){
   }
   console.log('Yes, Khalil is 20 years');
 }
-questionTwo();
 
 function questionThree(){
   var myCity = prompt('Do you think Khalil is from Seattle? Please answer with "yes" or "no".').toLowerCase();
@@ -31,7 +29,6 @@ function questionThree(){
   }
   console.log('Yes, Khalil is from Seattle');
 }
-questionThree();
 
 function questionFour(){
   var myHeight = prompt('Do you think Khalil is 6\'5"? Please answer with "yes" or "no".').toLowerCase();
@@ -44,7 +41,6 @@ function questionFour(){
   }
   console.log('Khalil is 6\'5"!');
 }
-questionFour();
 
 function questionFive(){
   var myCar = prompt('Do you think Khalil owns a car? Please answer with "yes" or "no".').toLowerCase();
@@ -57,7 +53,6 @@ function questionFive(){
   }
   console.log('Yes! Khalil owns a Acura');
 }
-questionFive();
 
 function questionSix(){
   var mySport = prompt('Does Khalil play basketball? Please answer with "yes" or "no".').toLowerCase();
@@ -70,7 +65,6 @@ function questionSix(){
   }
   console.log('Khalil plays soccer');
 }
-questionSix();
 
 function questionSeven(){
   var correctAnswer = 5;
@@ -88,7 +82,6 @@ function questionSeven(){
   }
   console.log('Kobe Bryant has 5 rings! #GOAT');
 }
-questionSeven();
 function questionEight(){
   var favoriteShoes = ['jordans', 'nike', 'adidas', 'yeezy', 'timberland'];
 
@@ -119,13 +112,19 @@ function questionEight(){
   }
   console.log('I love sneakers!');
 }
-questionEight();
 
 function endAlert(){
   alert('Nice playing with you ' + window.userName + ', you got ' + counter + ' answers right out of 7!');
   console.log(window.userName + ' got ' + counter + ' answers right out of 7!');
 }
 
-
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSeven();
+questionEight();
 endAlert();
 
