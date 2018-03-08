@@ -68,6 +68,7 @@ while(guessesLeftKobe > 0) {
   guessesLeftKobe--;
   alert('Wrong answer! You have ' + guessesLeftKobe + ' guesses remaining!');
 }
+console.log('Kobe Bryant has 5 rings! #GOAT');
 
 var favoriteShoes = ['jordans', 'nike', 'adidas', 'yeezy', 'timberland'];
 
@@ -89,14 +90,16 @@ while(guessesLeft > 0) {
   }
   guessesLeft--;
   if(flag === false){
-    ;
+    
     break;
   } else {
     alert('Wrong answer! You have ' + guessesLeft + ' guesses remaining!');
   }
 
 }
+console.log('I love sneakers!');
 alert('Nice playing with you ' + userName + ', you got ' + counter + ' answers right out of 7!');
+console.log(userName + ' got ' + counter + ' answers right out of 7!');
 
 
 
