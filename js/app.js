@@ -57,23 +57,3 @@ while(guessesLeftKobe > 0) {
   alert('Wrong answer! You have ' + guessesLeftKobe + ' guesses remaining!');
 }
 
-var favoriteShoes = ['jordans', 'nike', 'adidas', 'yeezy', 'timberland'];
-
-var guessesLeft = 6;
-var flag = true;
-while(guessesLeft > 0 && flag === true) {
-  var shoeGuess = prompt('Can you guess one my favorite shoes?').toLowerCase();
-
-  for(var i = 0; i < favoriteShoes.length; i++) {
-
-    if(favoriteShoes[i] === shoeGuess){
-      alert('Correct!');
-      flag = false;
-      break;
-
-    } else {
-      alert('Wrong answer! You have ' + guessesLeft + ' guesses remaining!');
-    }
-  }
-  guessesLeft--;
-}
