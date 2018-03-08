@@ -1,4 +1,8 @@
 'use strict';
+var userName = prompt('Hello, What is your name?');
+
+alert('Nice to meet you, ' + userName );
+
 var myAge = prompt('Do you think Khalil is 20 years old? Please answer with "yes" or "no".').toLowerCase();
 
 if(myAge.toLowerCase() === 'yes') {
@@ -56,4 +60,6 @@ while(guessesLeftKobe > 0) {
   guessesLeftKobe--;
   alert('Wrong answer! You have ' + guessesLeftKobe + ' guesses remaining!');
 }
+
+
 
