@@ -3,10 +3,13 @@ var userName = prompt('Hello, What is your name?');
 
 alert('Nice to meet you, ' + userName );
 
+var counter = 0;
+
 var myAge = prompt('Do you think Khalil is 20 years old? Please answer with "yes" or "no".').toLowerCase();
 
 if(myAge.toLowerCase() === 'yes') {
   alert('Correct!');
+  counter++;
 } else {
   alert('Wrong!');
 }
@@ -16,6 +19,7 @@ var myCity = prompt('Do you think Khalil is from Seattle? Please answer with "ye
 
 if(myCity.toLowerCase() === 'yes'){
   alert('Correct!');
+  counter++;
 }else {
   alert('Wrong!');
 }
@@ -25,6 +29,7 @@ var myHeight = prompt('Do you think Khalil is 6\'5"? Please answer with "yes" or
 
 if(myHeight.toLowerCase() === 'yes'){
   alert('Correct!');
+  counter++;
 }else {
   alert('Wrong!');
 }
@@ -34,6 +39,7 @@ var myCar = prompt('Do you think Khalil owns a car? Please answer with "yes" or 
 
 if(myCar.toLowerCase() === 'yes'){
   alert('Correct!');
+  counter++;
 }else {
   alert('Wrong!');
 }
@@ -43,6 +49,7 @@ var mySport = prompt('Does Khalil play basketball? Please answer with "yes" or "
 
 if(mySport.toLowerCase() === 'no'){
   alert('Correct!');
+  counter++;
 }else {
   alert('Wrong!');
 }
@@ -55,10 +62,39 @@ while(guessesLeftKobe > 0) {
 
   if(correctAnswer === kobeRings){
     alert('Correct!');
+    counter++;
     break;
   }
   guessesLeftKobe--;
   alert('Wrong answer! You have ' + guessesLeftKobe + ' guesses remaining!');
+}
+
+var favoriteShoes = ['jordans', 'nike', 'adidas', 'yeezy', 'timberland'];
+
+var guessesLeft = 6;
+var flag = true;
+while(guessesLeft > 0) {
+  var shoeGuess = prompt('Can you guess one of my favorite shoes?').toLowerCase();
+
+  for(var i = 0; i < favoriteShoes.length; i++) {
+
+    if(favoriteShoes[i] === shoeGuess){
+      alert('Correct!');
+      counter++;
+      flag = false;
+      break;
+
+
+    }
+  }
+  guessesLeft--;
+  if(flag === false){
+    counter++;
+    break;
+  } else {
+    alert('Wrong answer! You have ' + guessesLeft + ' guesses remaining!');
+  }
+
 }
 
 
