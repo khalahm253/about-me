@@ -89,13 +89,14 @@ while(guessesLeft > 0) {
   }
   guessesLeft--;
   if(flag === false){
-    counter++;
+    ;
     break;
   } else {
     alert('Wrong answer! You have ' + guessesLeft + ' guesses remaining!');
   }
 
 }
+alert('Nice playing with you ' + userName + ', you got ' + counter + ' answers right out of 7!');
 
 
 
